@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
 }
 
 .App-logo {
@@ -14,20 +13,29 @@
 }
 
 .App-header {
-  background-color: #050505;
+  margin: 0% 15px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(1px + 2vmin);
+  color: rgb(255, 255, 255);
 }
 
 .App-link {
   color: #61dafb;
 }
-
+.card{
+  position: relative;
+   margin: 0px 5px;
+   z-index: 1;
+}
+.card :hover{
+  position: relative;
+width: 150px;
+transition-delay: 0.5s;
+z-index: 10;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

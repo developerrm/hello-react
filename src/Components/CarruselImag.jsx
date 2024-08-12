@@ -1,13 +1,14 @@
+
+
 import React from 'react'
 
-export default function CarruselImag({url}) {
+export default function CarruselImag({url, alt}) {
+ 
   return (
-    <div className="card" style={{width: '18rem;'}}>
-    <img src={url} className="card-img-top" alt="..."/>
-  {/* <div class="card-body"> */}
-    {/* <h5 class="card-title">Card title</h5> */}
-    {/* <a href="#" class="btn btn-primary">Me gusta</a> */}
-  {/* </div> */}
+    <div className="card" >
+      <a href={url} style={{textDecoration:"none"}}>
+    <img width={100}  src={url} alt={alt}/>
+      </a>
     </div>
-  )
+   )
 }
